@@ -8,39 +8,11 @@ void main() {
   List<int> evenNumbers = [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
   print(evenNumbers);
 
-// Q.3: Write a Dart program to remove all duplicate elements from a given list of numbers.
-  List<int> number = [
-    1,
-    2,
-    3,
-    1,
-    5,
-    6,
-    2,
-    3,
-    4,
-    8,
-    6,
-    8,
-    7,
-    2,
-    9,
-    0,
-    1,
-    2,
-    4,
-    5
-  ];
+// Q.3: Create a map representing the prices of items in a grocery store.print out the items and their corresponding prices.
 
-  List<int> uniqueList = [];
-
-  for (int number in number) {
-    if (!uniqueList.contains(number)) {
-      uniqueList.add(number);
-    }
-  }
-  print(uniqueList);
-
+  Map items = {"sugar": 140, "oil": 550, "flour": 170, "salt": 70, "rice": 300};
+  print(items);
+  
 // Q.4: Write a Dart program to check if a given list is empty or not.
   List<String> myFruits = ["Banana", "Strawberry", "Pomegranate", "Apple"];
   print(myFruits.isEmpty);
