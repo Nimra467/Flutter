@@ -1,10 +1,6 @@
-void main(){
-   Map information = {
-    "name": "Nimra",
-    "phone": "03000000",
-    "course": "mobile app dev",
-    "qualification": "bscs"
-  };
- var shortKeys = information.keys.where((key) => key.length == 4);
-  print(shortKeys);
+void main() {
+  List alphabets = ["A", "B", "C", "D", "E", "F"];
+  int n = 4;
+  List firstNElements = alphabets.take(n).toList();
+  print(firstNElements);
 }
