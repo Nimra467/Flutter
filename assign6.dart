@@ -117,19 +117,20 @@ void main() {
   print(integers.reduce(max));
 
 // Q.10: Write a Dart code that takes in a list of strings and removes any duplicate elements, returning a new list without duplicates. The order of elements in the new list should be the same as in the original list.
-// List<String> countries = [
-//     "Nepal",
-//     "Nepal",
-//     "USA",
-//     "Canada",
-//     "Canada",
-//     "China",
-//     "Russia",
-// ];
+  List<String> countries = [
+    "Nepal",
+    "Nepal",
+    "USA",
+    "Canada",
+    "Canada",
+    "China",
+    "Russia",
+  ];
 
-// var seen = Set<String>();
-// List<String> uniquelist = countries.where((country) => seen.add(country)).toList();
-// print(uniquelist);
+  var seen = Set<String>();
+  List<String> uniquelist =
+      countries.where((country) => seen.add(country)).toList();
+  print(uniquelist);
 
 // Q 11: Write a Dart code that takes in a list and an integer n as parameters. The program should print a new list containing the first n elements from the original list.
 
@@ -163,10 +164,27 @@ void main() {
   print(evenInt);
 // Q.17: Given a list of integers, write a Dart code that uses the map() method to create a new list with each value squared. The program should take in the original list as a parameter and print the new list.
 
+  List intList = [0, 1, 2, 3, 4, 5, 6];
+  List squared = intList.map((element) => element * element).toList();
+  print(squared);
+
 // Q.18: Create a map named "person" with the following key-value pairs: "name" as "John", "age" as 25, "isStudent" as true. Write a Dart code to check if the person is both a student and over 18 years old. Print "Eligible" if both conditions are true, otherwise print "Not eligible".
 
+  Map person = {"name": "John", "age": 25, "isStudent": true};
+
+  if (person["age"] > 18 && person["isStudent"] == true) {
+    print("Eligible");
+  } else {
+    print("Not Eligible");
+  }
 // Q.19: Given a map representing a product with keys "name", "price", and "quantity", write Dart code to check if the product is in stock. If the quantity is greater than 0, print "In stock", otherwise print "Out of stock".
 
+  Map product = {"name": "Apple", "price": 350, "quantity": 10};
+  if (product["quantity"] > 0) {
+    print("product is in stock");
+  } else {
+    print("product is out of stock");
+  }
 // Q.20: Create a map named "car" with the following key-value pairs: "brand" as "Toyota", "color" as "Red", "isSedan" as true. Write Dart code to check if the car is a sedan and red in color. Print "Match" if both conditions are true, otherwise print "No match".
 
   Map car = {"brand": "Toyata", "color": "Red", "isSedan": "true"};
